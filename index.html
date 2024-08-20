@@ -4,22 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
     <header>
       <h1>My CV</h1>
       <nav>
         <ul>
-          <li><a href="#">About me</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li>
+            <a href="#aboutme">
+              <span class="border-danger">About me</span>
+            </a>
+          </li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="https://google.com">Google</a></li>
+          <li><a href="https://abv.bg">ABV</a></li>
         </ul>
       </nav>
     </header>
     <main id="hero">
-      <section>
-        <h2>My Bio</h2>
-        <p>
+      <section class="mb-20" id="myBio">
+        <h2 id="myBioTitle">My Bio</h2>
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing.</span>
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing.</span>
+
+        <p class="pStyle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+          sagittis lacus id ornare eleifend. Vivamus non dolor id magna
+          dignissim convallis eget et ipsum. Curabitur odio sapien, posuere non
+          faucibus vel, bibendum in eros.
+          <span
+            class="text-warning b-5"
+            id="importantTxt"
+            style="color: greenyellow"
+            >Integer ligula augue</span
+          >, mollis in aliquam nec, malesuada vel ligula. Fusce finibus sodales
+          velit, a sollicitudin ipsum posuere molestie. Donec vel ante at eros
+          consequat fringilla. Sed malesuada, diam nec eleifend mollis, justo
+          eros viverra est, eget pharetra lacus risus vel sem.
+        </p>
+        <p class="pStyle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+          sagittis lacus id ornare eleifend. Vivamus non dolor id magna
+          dignissim convallis eget et ipsum. Curabitur odio sapien, posuere non
+          faucibus vel, bibendum in eros. Integer ligula augue, mollis in
+          aliquam nec, malesuada vel ligula. Fusce finibus sodales velit, a
+          sollicitudin ipsum posuere molestie. Donec vel ante at eros consequat
+          fringilla. Sed malesuada, diam nec eleifend mollis, justo eros viverra
+          est, eget pharetra lacus risus vel sem.
+        </p>
+        <p class="pStyle">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
           sagittis lacus id ornare eleifend. Vivamus non dolor id magna
           dignissim convallis eget et ipsum. Curabitur odio sapien, posuere non
@@ -30,16 +65,17 @@
           est, eget pharetra lacus risus vel sem.
         </p>
         <ul>
-          <li>Text 1</li>
+          <li class="first-item">Text 1</li>
           <li>Text 2</li>
           <li>Text 3</li>
           <li>Text 4</li>
           <li>Text 5</li>
         </ul>
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing.</span>
       </section>
-      <article>
+      <article class="mb-20">
         <h2>Programming winner for 2024 for Texas</h2>
-        <p>
+        <p class="pStyle">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
           sagittis lacus id ornare eleifend. Vivamus non dolor id magna
           dignissim convallis eget et ipsum. Curabitur odio sapien, posuere non
@@ -51,6 +87,42 @@
         </p>
       </article>
     </main>
-    <footer>All rights reserved</footer>
+    <footer>
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Enter name to enter"
+        />
+        <label for="lastName">Last Name:</label>
+        <input
+          id="lastName"
+          type="text"
+          name="name-Last"
+          placeholder="Enter last-name-to enter"
+        />
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Enter email"
+          required
+        />
+        <label for="question">Question:</label>
+        <input
+          id="question"
+          type="text"
+          name="question"
+          placeholder="Enter question"
+        />
+        <input type="button" value="Submit" disabled />
+      </form>
+
+      All rights reserved
+    </footer>
   </body>
 </html>

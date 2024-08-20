@@ -1,0 +1,146 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.border-danger {
+  border: 1px solid darkred;
+}
+
+#hero {
+  background-color: #fee822;
+}
+
+#myBio > span {
+  background-color: lightcoral;
+}
+
+#myBio span {
+  border-bottom: 3px solid black;
+}
+
+.pStyle {
+  margin: 20px;
+  color: grey;
+}
+
+[name] {
+  border: none;
+  outline: none;
+}
+
+a[href="#aboutme"] .border-danger {
+  color: #fee822;
+}
+
+[href^="https"]:hover {
+  color: red;
+}
+
+[href$="cts"] {
+  color: lightskyblue;
+}
+
+/* [placeholder*="name"] {
+  border: 2px solid blue;
+} */
+
+/* [placeholder~="name"] {
+  border: 2px solid blue;
+} */
+
+/* input[placeholder|="name"] {
+  border: 2px solid blue;
+} */
+
+/* Starts with the value, either ends or continues with a dash */
+input[name|="name"] {
+  border: 2px solid blue;
+}
+
+/* #hero li {
+  color: green;
+} */
+
+/* .first-item ~ li {
+  color: magenta;
+} */
+
+.first-item + li {
+  color: magenta;
+}
+
+h2 ~ p {
+  border-bottom: 3px solid green;
+}
+
+#importantTxt {
+  color: blue;
+}
+.text-warning.b-5 {
+  color: yellow;
+}
+
+main .mb-20 p span {
+  color: pink !important;
+}
+
+input:required {
+  border: 1px solid red;
+}
+
+input:disabled {
+  width: 300px;
+}
+
+a:visited {
+  color: orangered;
+}
+
+input:placeholder-shown {
+  background-color: #fee822;
+}
+
+ul li:first-child {
+  border-bottom: 2px solid black;
+}
+
+input::placeholder {
+  color: aqua;
+}
+
+p::selection {
+  background-color: blueviolet;
+}
+
+p::first-letter {
+  font-size: 30px;
+}
+
+p::first-line {
+  color: red;
+}
+
+h2::after {
+  content: "____";
+}
+
+li:not(:last-child)::after {
+  content: ",";
+}
+
+li::marker {
+  color: red;
+  content: "*";
+}
